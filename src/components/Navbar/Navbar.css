@@ -1,7 +1,7 @@
 .navbar-bg-color {
    background-color: #161b22 !important;
    display: flex;
-   padding: 20px 16px;
+   padding: 10px 5px !important;
    font-size: 14px;
    line-height: 1.5;
    color: #ffffffb3;
