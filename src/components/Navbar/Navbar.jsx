@@ -8,9 +8,6 @@ import './Navbar.css';
 function Navbar() {
   return (
     <>
-        {/* hello world */}
-        {/* <Gitlogo /> */}
-
         <Navbox expand="lg" className="navbar-bg-color">
             <Container>
                 <div className="navbar-p-text">
@@ -45,8 +42,6 @@ function Navbar() {
                         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
                 </div>
-                
-                
             </Container>
         </Navbox>
     </>
