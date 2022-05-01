@@ -1,0 +1,40 @@
+.navbar-bg-color {
+   background-color: #161b22 !important;
+   display: flex;
+   padding: 20px 16px;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #ffffffb3;
+}
+
+.navbar-p-text {
+    display: flex;
+    gap: 1em;
+    padding: auto;
+}
+
+.navbar-texts-p {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.navbar-serach-input {
+    background-color: #00000000 !important;
+    color: #ffffff !important;
+    padding: 5px 12px;
+}
+
+.navbar-p-icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+
+}
