@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, NavDropdown, Navbar as Navbox, Form } from 'react-bootstrap'
+import { Container, Navbar as Navbox } from 'react-bootstrap'
 import { ReactComponent as Overview } from '../../assets/header/book-overview.svg';
 import { ReactComponent as Packages } from '../../assets/header/packages.svg';
 import { ReactComponent as Projects } from '../../assets/header/projects.svg';
