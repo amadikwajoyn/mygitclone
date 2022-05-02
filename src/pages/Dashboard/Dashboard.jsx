@@ -7,7 +7,7 @@ import './Dashboard.css'
 
 function Dashboard() {
   return (
-    <>
+    <div className="App-header">
         <Navbar />
         <Header />
         <div className="dashboard-container">
@@ -15,7 +15,7 @@ function Dashboard() {
             <RepoList />
         </div>
         
-    </>
+    </div>
   )
 }
 

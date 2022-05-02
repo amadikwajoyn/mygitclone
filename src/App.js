@@ -1,12 +1,18 @@
-import Dashboard from './pages/Dashboard/Dashboard';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import ProtectedRoute from "./components/Route/ProtectedRoute";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
-    <div className="App-header">
-      <Dashboard />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<ProtectedRoute />}>
+          <Route path="/" element={<Dashboard />} />
+        </Route>
+        <Route path="login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
