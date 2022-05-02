@@ -11,6 +11,7 @@ export const useAPI = () => {
           headers: {
             "Content-Type": "application/json",
           },
+          crossdomain: true,
         }
       );
       console.log(data);
