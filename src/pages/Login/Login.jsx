@@ -14,7 +14,7 @@ const Login = () => {
     if (query.code) {
       authenticate({ client_id, redirect_uri, client, code: query.code });
     }
-  }, []);
+  }, [authenticate, client, client_id, query.code, redirect_uri]);
   return (
     <div className="App-header">
       <a
