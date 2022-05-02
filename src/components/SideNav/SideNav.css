@@ -1,0 +1,35 @@
+.sidenav-user-info {
+    padding: 1em;
+}
+
+.sidenav-sidenar-info {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff33;
+}
+
+.sidenar-info-link:hover {
+    cursor: pointer;
+}
+
+.sidenar-info-follow:hover {
+    cursor: pointer;
+}
+
+.sidenav-highlight {
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+    text-align: center;
+
+
+
+}
+
+.sidenav-highlight-text {
+    font-size: 12px;
+    color: #a371f7;
+    border-radius: 10px;
+    border: 1px solid #a371f7;
+    padding: 1px 5px;
+}
