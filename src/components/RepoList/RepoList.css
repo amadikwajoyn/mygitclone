@@ -1,0 +1,59 @@
+.repo-list-container {
+    border-bottom: 1px solid #ffffff2a;
+    width: 100%;
+    height: 100%;
+    padding: 1em 0px;
+}
+
+.repo-list-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo-list-texts-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.repo-list-texts-btn {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.repo-list-texts-name {
+    color: #58a6ff;
+    font-size: 22px;
+    line-height: 2.5em;
+    font-weight: bold;
+}
+
+.repo-list-texts-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.repo-list-texts-btn-public {
+    padding: 1px 5px;
+    font-size: 11px;
+    border-color: 1px solid #ffffff2a !important;
+    font-weight: bold;
+}
+
+.repo-list-texts-list {
+    font-size: 14px;
+    color: #8b949e;
+}
+
+.repo-language-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ffffff33;
+    border-radius: 50%;
+    background-color: #f1e05a;
+}
