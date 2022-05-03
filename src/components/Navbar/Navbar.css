@@ -38,3 +38,11 @@
     white-space: nowrap;
 
 }
+
+.profile-sticker.top-nav {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}

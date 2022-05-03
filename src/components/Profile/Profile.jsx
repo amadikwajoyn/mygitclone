@@ -14,8 +14,13 @@ function Profile() {
   return (
     <>
       <div className="profile-container">
-        <div className="profile-image">
-          <span class="profile-sticker"></span>
+        <div
+          className="profile-image"
+          style={{ backgroundImage: `url(${user.avatar_url})` }}
+        >
+          <span class="profile-sticker">
+              👩‍💻
+          </span>
         </div>
         <div className="profile-user-info">
           <h4 className="profile-fullname">{user.name}</h4>
