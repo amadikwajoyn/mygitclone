@@ -17,7 +17,7 @@ function RepoList() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div className="w-100"> 
+    <div className="w-100">
       {list.length
         ? list.map((repo) => (
             <div className="repo-list-container">
@@ -25,38 +25,45 @@ function RepoList() {
                 <div className="repo-list-texts-list">
                   <p className="repo-list-texts-name">{repo.name}</p>
                   <p className="repo-list-texts-btn repo-list-texts-btn-public">
-                    {repo.visibility}
+                    {repo.visibility.slice(0,1).toUpperCase() + repo.visibility.slice(1)}
                   </p>
                 </div>
 
-                <div class="btn-group btn-repo-star" role="group" aria-label="Button group with nested dropdown">
-                    <button type="button" class="btn btn btn-repo-star-text">
-                        <Stars /> {' '}
-                        Star
-                    </button>
-                    <div class="btn-group btn-repo-star btn-repo-star-text" role="group">
-                        <NavDropdown
-                            id="basic-nav-dropdown"
-                            className="btn-repo-star-text"
-                        >
-                            <NavDropdown.Item href="#action/3.1">
-                                Future  Idea
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                My Stack
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                    </div>
+                <div
+                  class="btn-group btn-repo-star"
+                  role="group"
+                  aria-label="Button group with nested dropdown"
+                >
+                  <button type="button" class="btn btn btn-repo-star-text">
+                    <Stars /> Star
+                  </button>
+                  <div
+                    class="btn-group btn-repo-star btn-repo-star-text"
+                    role="group"
+                  >
+                    <NavDropdown
+                      id="basic-nav-dropdown"
+                      className="btn-repo-star-text"
+                    >
+                      <NavDropdown.Item href="#action/3.1">
+                        Future Idea
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">
+                        My Stack
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  </div>
                 </div>
-                
               </div>
               <div className="repo-list-texts">
                 <div className="repo-list-texts-list">
-                  <p>
-                    <span class="repo-language-color"></span>
-                    {repo.language}
-                  </p>
-                  <p>{repo.updated_at}</p>
+                  {repo.language ? (
+                    <p>
+                      <span class="repo-language-color"></span>
+                      {repo.language}
+                    </p>
+                  ) : null}
+                  <p>{new Date(repo.updated_at).toLocaleDateString()}</p>
                 </div>
                 <div className="repo-list-texts-list">
                   <p>line...............</p>
