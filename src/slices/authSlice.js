@@ -13,13 +13,13 @@ export const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    login(state, payload) {
-        localStorage.setItem("isLoggedIn", JSON.stringify(payload.isLoggedIn))
-        localStorage.setItem("user", JSON.stringify(payload.user))
+    login(state, action) {
+        localStorage.setItem("isLoggedIn", JSON.stringify(action.payload.isLoggedIn))
+        localStorage.setItem("user", JSON.stringify(action.payload.user))
         return {
           ...state,
-          isLoggedIn: payload.isLoggedIn,
-          user: payload.user,
+          isLoggedIn: action.payload.isLoggedIn,
+          user: action.payload.user,
         };
     },
     logout(state) {

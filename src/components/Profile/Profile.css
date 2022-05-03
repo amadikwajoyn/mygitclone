@@ -10,11 +10,10 @@
     border-radius: 50%;
     background-color: #238042;
     margin-top: -50px;
-    z-index: -1;
     display: inline-block;
-    overflow: hidden;
     line-height: 1;
     vertical-align: middle;
+    position: relative;
 
 }
 
@@ -27,10 +26,10 @@
     border: 1px solid #ffffff33;
     border-radius: 50%;
     background-color: #000000;
-    bottom: 16em;
+    bottom: 2.5em;
+    right: 0;
     width: 38px;
     height: 38px;
-    margin-left: -40px;
 }
 
 .profile-fullname {

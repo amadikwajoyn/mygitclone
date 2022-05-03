@@ -3,8 +3,12 @@ import Profile from '../Profile/Profile'
 import Badges from '../../assets/badge--acv-64.png'
 import { ReactComponent as Stars } from '../../assets/header/stars.svg';
 import './SideNav.css'
+import { useSelector } from "react-redux";
+
 
 function SideNav() {
+
+  const { user } = useSelector((state) => state.auth);
   return (
     <div>
         <Profile />
@@ -17,8 +21,8 @@ function SideNav() {
             <div className="sidenav-sidenar-info sidenar-info-follow">
                 <p>Highlights</p>
                 <div className="sidenav-highlight">
-                    <Stars /> 
-                    <p className="sidenav-highlight-text">PRO</p>
+                    <Stars /> {' '}
+                    <p className="ml-2 sidenav-highlight-text"> {user.plan.name}</p>
                 </div>
             </div>
 

@@ -8,8 +8,8 @@ export const repoSlice = createSlice({
   name: 'repository',
   initialState,
   reducers: {
-    fetchUserRepositories (state, payload) {
-        return { ...state, list: [ ...payload ] }
+    fetchUserRepositories (state, action) {
+        return { ...state, list: [ ...action.payload ] }
     }
   },
 })
