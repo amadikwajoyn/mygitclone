@@ -4,7 +4,7 @@
     padding: 0em 5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .dashboard-container {
         display: flex;
         flex-direction: column;

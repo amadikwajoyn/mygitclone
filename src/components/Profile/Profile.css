@@ -60,3 +60,16 @@
     color: #58a6ff;
     cursor: pointer;
 }
+
+@media (max-width: 868px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        margin-top:0px;
+    }
+
+    .profile-sticker {
+        display: none;
+    }
+
+}
