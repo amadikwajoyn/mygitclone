@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import { useSelector } from "react-redux";
+import { ToastContainer } from 'react-toastify';
 import { useAPI } from "../../hooks/useAPI";
 import { useQuery } from "../../hooks/useQuery";
 
@@ -22,6 +23,7 @@ const Login = () => {
       >
         Login
       </a>
+      <ToastContainer />
     </div>
   );
 };
