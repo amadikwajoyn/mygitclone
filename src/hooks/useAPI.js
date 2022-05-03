@@ -5,7 +5,7 @@ export const useAPI = () => {
   const authenticate = async ({ client_id, redirect_uri, client, code }) => {
     try {
       const { data } = await axios.post(
-        "/access_token",
+        "https://www.github.com/login/oauth/access_token",
         { client_id, redirect_uri, client, code },
         {
           headers: {
