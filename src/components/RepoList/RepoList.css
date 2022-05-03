@@ -35,7 +35,7 @@
 }
 
 .repo-list-texts-btn-public {
-    padding: 1px 5px;
+    padding: 1px 4px;
     font-size: 11px;
     border-color: 1px solid #ffffff2a !important;
     font-weight: bold;
@@ -67,4 +67,23 @@
 .btn-repo-star-text {
     color: #fff !important;
     font-size: 12px !important;
+}
+
+@media (max-width: 868px) {
+    .repo-list-texts-list {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .repo-list-texts-name {
+        font-size: 12px;
+    }
+
+    .repo-list-texts-btn-public {
+        font-size: 9px;
+    }
+
+    .btn-repo-star-text {
+        font-size: 10px !important;
+    }
 }
