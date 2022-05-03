@@ -1,0 +1,14 @@
+.App-header {
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+}
+
+.App-header a {
+    background-color: #532574;
+    border-radius: 10px;
+    padding: 5px;
+    color: #ffff;
+    text-decoration: none;
+}
