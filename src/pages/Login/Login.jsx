@@ -19,7 +19,7 @@ const Login = () => {
     }
   }, [authenticate, client, client_id, query.code, redirect_uri]);
   return (
-    <div className="App-header">
+    <div className="App-header Login-header">
       <a
         href={`https://github.com/login/oauth/authorize?client_id=${client_id}&scope=user&redirect_uri=${redirect_uri}`}
       >
