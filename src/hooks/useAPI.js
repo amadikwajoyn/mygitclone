@@ -14,7 +14,7 @@ export const useAPI = () => {
   const authenticate = async ({ client_id, redirect_uri, client, code }) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/authenticate",
+        `${process.env.REACT_APP_SERVER}/authenticate`,
         { client_id, redirect_uri, client, code },
         {
           headers: {
